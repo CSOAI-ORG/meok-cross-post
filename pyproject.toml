@@ -1,0 +1,18 @@
+[project]
+name = "meok-cross-post"
+version = "0.1.0"
+description = "One-command distribution scoring for MCP servers across 6 marketplaces."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+meok-cross-post = "meok_cross_post.cli:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["meok_cross_post*"]
